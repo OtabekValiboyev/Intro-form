@@ -86,8 +86,7 @@ img {
 /* ABOUT-COURSE */
 .main-content__container {
   display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
+  /* align-items: flex-start; */
 }
 
 .about-course {
@@ -183,13 +182,9 @@ img {
   line-height: 42px;
 }
 
-.form {}
-
 .form__fields {
   margin-bottom: 63px;
 }
-
-.form__field {}
 
 .form__field:not(:last-child) {
   margin-bottom: 24px;
@@ -274,6 +269,122 @@ img {
   font-weight: 500;
   line-height: 15px;
   /* text-decoration-line: underline; */
+}
+
+
+/* MEDIA */
+@media only screen and (max-width: 800px) {
+  .main-content__container {
+    flex-direction: column;
+  }
+
+  .about-course {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+  }
+
+  .course-form {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .about-course__title {
+    font-size: 10px;
+    margin-bottom: 35px;
+  }
+
+  .about-course__info {
+    padding-top: 45px;
+    padding-left: 25px;
+    padding-right: 79px;
+    padding-bottom: 120px;
+  }
+
+  .about-course__heading {
+    width: 100%;
+    max-width: 241px;
+    font-size: 28px;
+    line-height: 38px;
+    margin-bottom: 20px;
+  }
+
+  .about-course__link {
+    font-size: 16px;
+  }
+
+  .course-form {
+    padding-top: 45px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 45px;
+  }
+
+  .course-form__heading {
+    width: 100%;
+    max-width: 259px;
+    font-size: 26px;
+    margin-bottom: 35px;
+  }
+
+  .form__input {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    font-size: 16px;
+  }
+
+  ::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    color: #555;
+    font-size: 14px;
+  }
+
+  :-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #555;
+    font-size: 14px;
+    opacity: 1;
+  }
+
+  ::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #555;
+    font-size: 14px;
+    opacity: 1;
+  }
+
+  :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #555;
+    font-size: 14px;
+  }
+
+  ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #555;
+    font-size: 14px;
+  }
+
+  ::placeholder {
+    /* Most modern browsers support this now. */
+    color: #555;
+    font-size: 14px;
+  }
+
+  .form__fields {
+    margin-bottom: 70px;
+  }
+
+  .course-form__description {
+    width: 100%;
+    max-width: 210px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 10px;
+  }
 }
 
 
