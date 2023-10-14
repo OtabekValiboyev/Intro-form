@@ -2,7 +2,7 @@
 @font-face {
   font-family: 'Inter';
   src: url('../font/Inter-SemiBold.woff2') format('woff2'),
-      url('../font/Inter-SemiBold.woff') format('woff');
+    url('../font/Inter-SemiBold.woff') format('woff');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -11,7 +11,7 @@
 @font-face {
   font-family: 'Inter';
   src: url('../font/Inter-Medium.woff2') format('woff2'),
-      url('../font/Inter-Medium.woff') format('woff');
+    url('../font/Inter-Medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -20,7 +20,7 @@
 @font-face {
   font-family: 'Inter';
   src: url('../font/Inter-Bold.woff2') format('woff2'),
-      url('../font/Inter-Bold.woff') format('woff');
+    url('../font/Inter-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -29,7 +29,7 @@
 @font-face {
   font-family: 'Inter';
   src: url('../font/Inter-Regular.woff2') format('woff2'),
-      url('../font/Inter-Regular.woff') format('woff');
+    url('../font/Inter-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -77,4 +77,100 @@ img {
 
 .main-content {
   flex-grow: 1;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #f1f4ff;
+}
+
+
+/* ABOUT-COURSE */
+.main-content__container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.about-course {
+  width: 100%;
+  max-width: 570px;
+  overflow-x: hidden;
+  border-radius: 20px;
+  margin-right: 12px;
+  background-image: url(../img/about-course-bg.png);
+  background-repeat: no-repeat;
+}
+
+.about-course__info {
+  padding-top: 55px;
+  padding-left: 60px;
+  padding-right: 121px;
+  padding-bottom: 203px;
+}
+
+.about-course__title {
+  display: inline-block;
+  padding: 5px 15px;
+  margin-bottom: 60px;
+  border-radius: 41px;
+  border: 1px solid #FFF;
+  opacity: 0.8;
+  background-color: rgba(255, 255, 255, 0.00);
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.about-course__heading {
+  margin-top: 0;
+  margin-bottom: 25px;
+  width: 100%;
+  max-width: 389px;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 46px;
+}
+
+.about-course__text {
+  margin: 0;
+  width: 100%;
+  max-width: 347px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.about-course__link {
+  display: block;
+  padding: 29px 5px;
+  text-align: center;
+  border-radius: 0px 0px 20px 20px;
+  background-color: #4DC490;
+  color: #fff;
+  font-family: 'Inter';
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.about-course__link-additional {
+  font-weight: 400;
+}
+
+
+
+/* RETINA BG */
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+
+  .about-course {
+    background-image: url(../img/about-course-bg@2x.png);
+  }
 }
