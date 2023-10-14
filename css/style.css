@@ -64,8 +64,8 @@ body {
 .container {
   width: 100%;
   max-width: 1200px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 24px;
+  padding-right: 24px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -158,6 +158,122 @@ img {
 
 .about-course__link-additional {
   font-weight: 400;
+}
+
+
+/* COURSE-FORM */
+.course-form {
+  width: 100%;
+  max-width: 570px;
+  padding-top: 55px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 40px;
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+.course-form__heading {
+  margin-top: 0;
+  margin-bottom: 68px;
+  color: #000;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 42px;
+}
+
+.form {}
+
+.form__fields {
+  margin-bottom: 63px;
+}
+
+.form__field {}
+
+.form__field:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.form__input {
+  width: 100%;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-right: 11px;
+  border: 0;
+  border-bottom: 1px solid #555;
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.form__input:not(:focus):not(:placeholder-shown):valid {
+  border-color: green;
+}
+
+.form__input:not(:focus):not(:placeholder-shown):invalid {
+  border-color: #f03535;
+}
+
+.form__input:not(:focus):not(:placeholder-shown):invalid ~ .form__error {
+  display: block;
+}
+
+/* .form__input:focus + .validation-error,
+.form__input:valid + .validation-error,
+.form__input:placeholder-shown + .form__error {
+  display: block;
+} */
+
+.form__error {
+  /* display: block; */
+  display: none;
+  margin-top: 4px;
+  text-align: right;
+  color: #f03535;
+  text-align: right;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.form__button {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 8px;
+  border: 0;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #655af2;
+  color: #fff;
+  font-family: 'Inter';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.course-form__description {
+  margin: 0;
+  color: #555;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px;
+  text-align: center;
+}
+
+.course-form__description-link {
+  color: #f03535;
+  font-family: 'Inter';
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 15px;
+  /* text-decoration-line: underline; */
 }
 
 

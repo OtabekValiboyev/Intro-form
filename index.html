@@ -22,6 +22,32 @@
         </div>
         <a class="about-course__link" href="#">Try it free 7 days, <span class="about-course__link-additional">then $20/mo</span></a>
       </div>
+
+      <div class="course-form">
+        <h2 class="course-form__heading">Sign up for the course and get free 7 days</h2>
+        <form class="form" action="https://echo.htmlacademy.ru" method="GET">
+          <div class="form__fields">
+            <div class="form__field">
+              <input class="form__input" type="text" placeholder="First name" aria-label="user name" required>
+              <span class="form__error">First Name cannot be empty</span>
+            </div>
+            <div class="form__field">
+              <input class="form__input" type="text" placeholder="Last name" aria-label="user surname" required>
+              <span class="form__error">Last Name cannot be empty</span>
+            </div>
+            <div class="form__field">
+              <input class="form__input" type="email" placeholder="Email address" aria-label="user email address" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required>
+              <span class="form__error">Looks like this is not an email</span>
+            </div>
+            <div class="form__field">
+              <input class="form__input" type="password" placeholder="Password" aria-label="user password" required>
+              <span class="form__error">Password cannot be empty</span>
+            </div>
+          </div>
+          <button class="form__button" type="submit">Claim your free trial</button>
+        </form>
+        <p class="course-form__description">By clicking the button, you are agreeing to our <a class="course-form__description-link" href="#">Terms and Services</a></p>
+      </div>
     </div>
   </main>
 
